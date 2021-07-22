@@ -1,5 +1,16 @@
 # Welcome to flyNow 🤫 !
 
+
+<br>
+<br>
+
+<p align="center">
+    <img src="./art/banner.png">
+</p>
+
+<br>
+<br>
+
 **FlyNow** is a `CI` - `gradle Plugin` that does :
 -  Generates an `APK` with the name of `Month-Day_Hour-GitBranch.apk`
 - Authenticates  your `Google Drive Account` with Your [Google Drive API Application](https://developers.google.com/drive/api/v3/enable-drive-api) for you.
