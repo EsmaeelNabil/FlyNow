@@ -2,6 +2,8 @@ package flyNow.utils
 
 import org.gradle.api.Project
 import org.gradle.api.Task
+import org.gradle.internal.impldep.org.codehaus.plexus.interpolation.os.OperatingSystemUtils
+import org.gradle.internal.os.OperatingSystem
 import java.io.BufferedReader
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -24,12 +26,24 @@ fun getDate(forTxtFile: Boolean = false): String {
     return current.format(formatter).trim()
 }
 
+fun isWindows() = OperatingSystem.current().isWindows
+
 fun Project.getBranchName(): String {
     val branchName = ByteArrayOutputStream()
-    exec {
-        commandLine("git", "rev-parse", "--abbrev-ref", "HEAD")
+
+    val exit = exec {
+        if (isWindows())
+            commandLine("cmd", "/c", "git", "rev-parse", "--abbrev-ref", "HEAD")
+        else
+            commandLine("git", "rev-parse", "--abbrev-ref", "HEAD")
+
         standardOutput = branchName
+    }.rethrowFailure()
+
+    if (exit.exitValue != 0) {
+        throw Exception(NOT_GIT_PROJECT_MESSAGE)
     }
+
     return branchName.toString().getBranchName
 }
 
@@ -37,9 +51,19 @@ fun Task.getBranchName() = project.getBranchName()
 
 fun Project.getLastCommit(): String {
     val commit = ByteArrayOutputStream()
-    exec {
-        commandLine("git", "log", "--oneline")
+    val exit = exec {
+
+        if (isWindows())
+            commandLine("cmd", "/c", "git", "log", "--oneline")
+        else
+            commandLine("git", "log", "--oneline")
+
         standardOutput = commit
+
+    }.rethrowFailure()
+
+    if (exit.exitValue != 0) {
+        throw Exception(NOT_GIT_PROJECT_MESSAGE)
     }
 
     return commit.toString().getCommitMessage.lines().first()
@@ -100,8 +124,6 @@ fun DriveFile.getDriveLink() = "https://drive.google.com/open?id=${this.id}"
 private val String.getBranchName get() = this.replace("/", "-").trim()
 private val String.getCommitMessage get() = this.drop(8).trim()
 
-private val apkPath = "/outputs/apk/debug/app-debug.apk"
-
 
 val Project.debugApkFile get() = File("${project.buildDir.absoluteFile}$apkPath")
 val Project.debugPath get() = "${project.buildDir.absoluteFile}/outputs/apk/debug"
@@ -112,5 +134,3 @@ val Project.generatedApk get() = "${project.buildDir.absoluteFile}/outputs/apk/d
 val Project.buildDir: File get() = this.buildDir.absoluteFile
 val Task.buildDir: File get() = project.buildDir
 
-var DOWNLOAD_URL = "htttps://www.google.com"
-val EXTENSION_NAME = "flyNow"

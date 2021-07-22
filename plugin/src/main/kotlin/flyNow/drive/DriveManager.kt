@@ -16,9 +16,8 @@ import com.google.api.client.json.jackson2.JacksonFactory
 import com.google.api.client.util.store.FileDataStoreFactory
 import com.google.api.services.drive.Drive
 import com.google.api.services.drive.DriveScopes
-import com.google.api.services.drive.model.FileList
 import com.google.api.services.drive.model.Permission
-import org.codehaus.groovy.runtime.DefaultGroovyMethods.printf
+import flyNow.utils.PLUGIN_NAME
 import java.io.File
 import java.io.IOException
 import kotlin.system.exitProcess
@@ -28,11 +27,11 @@ import com.google.api.services.drive.model.File as DriveFile
 class DriveManager {
 
     /** Application name.  */
-    private val APPLICATION_NAME = "FlyManager"
+    private val APPLICATION_NAME = PLUGIN_NAME
 
     /** Directory to store user credentials for this application.  */
     private val DATA_STORE_DIR = File(
-        System.getProperty("user.home"), ".credentials/flyManager"
+        System.getProperty("user.home"), ".credentials/${PLUGIN_NAME}"
     )
 
     /** Global instance of the [FileDataStoreFactory].  */

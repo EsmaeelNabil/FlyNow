@@ -11,6 +11,10 @@ import org.gradle.api.tasks.TaskAction
 
 abstract class SlackNotifierTask : DefaultTask() {
 
+    companion object {
+        const val name = "notifySlack"
+    }
+
     @get:Input
     abstract val channelWebhook: Property<String>
 

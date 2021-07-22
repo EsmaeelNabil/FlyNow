@@ -10,6 +10,10 @@ import java.io.File
 
 abstract class UploadToDriveTask : DefaultTask() {
 
+    companion object {
+        const val name = "uploadApk"
+    }
+
     @get:Input
     abstract val client_id: Property<String>
 

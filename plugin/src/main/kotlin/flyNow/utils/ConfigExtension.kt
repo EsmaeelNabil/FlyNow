@@ -2,12 +2,12 @@ package flyNow.utils
 
 import org.gradle.api.provider.Property
 
-interface FlyNow {
-    val clientSecret: Property<String>
-    val clientId: Property<String>
-    val botName: Property<String>
-    val useCustomMessage: Property<Boolean>
-    val customMessage: Property<String>
-    val channelWebhook: Property<String>
-    val authorName: Property<String>
+abstract class FlyNow {
+    abstract val clientSecret: Property<String>
+    abstract val clientId: Property<String>
+    abstract val botName: Property<String>
+    abstract val useCustomMessage: Property<Boolean>
+    abstract val customMessage: Property<String>
+    abstract val channelWebhook: Property<String>
+    abstract val authorName: Property<String>
 }

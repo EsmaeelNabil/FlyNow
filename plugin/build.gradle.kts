@@ -37,9 +37,9 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        create("FlyManager") {
+        create("FlyNow") {
             id = "com.esmaeel.flyNow"
-            implementationClass = "flyNow.FlyManager"
+            implementationClass = "flyNow.FlyNowPlugin"
             displayName = "./gradlew flyNow"
             description = "Painless ci management - build, rename, upload apk and notify slack out of the box"
         }
