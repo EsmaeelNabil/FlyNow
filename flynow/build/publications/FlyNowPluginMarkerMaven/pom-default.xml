@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.esmaeel.flyNow</groupId>
+  <artifactId>com.esmaeel.flyNow.gradle.plugin</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>./gradlew flyNow</name>
+  <description>Painless ci management - build, rename, upload apk and notify slack out of the box</description>
+  <url>https://github.com/EsmaeelNabil/FlyNow</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>esma3el</id>
+      <name>Esmaeel Nabil</name>
+      <email>esmaeelnabil@yahoo.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://github.com/EsmaeelNabil/FlyNow</connection>
+    <developerConnection>https://github.com/EsmaeelNabil/FlyNow</developerConnection>
+    <url>https://github.com/EsmaeelNabil/FlyNow</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.esmaeel</groupId>
+      <artifactId>flynow</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+  </dependencies>
+</project>

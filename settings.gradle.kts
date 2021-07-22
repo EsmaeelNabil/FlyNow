@@ -7,5 +7,5 @@
  * in the user manual at https://docs.gradle.org/7.1.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = "FlyNow"
-include("plugin")
+rootProject.name = "FlyNowGradlePlugin"
+include("flynow")

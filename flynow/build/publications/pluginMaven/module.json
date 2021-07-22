@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.esmaeel",
+    "module": "flynow",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "flynow-1.0.0.jar",
+          "url": "flynow-1.0.0.jar",
+          "size": 43613,
+          "sha512": "bcbffac4e872a0ba6d65ab408c768b5647c73cf7255343c3bd989ed3110cca0343a12cb6ecc3d9555ae2beb439848d86fde362c7f1410e8581ab89c7303d67c0",
+          "sha256": "20aa22d7406056d77e0719c69b35d08af823b4026e6763bebb3f2e2a95313c34",
+          "sha1": "ac1cb7c9e5e10e8c2a6394de9cfe9c92ff6d3853",
+          "md5": "9222222a810e5e887469a3359a0ba6b1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "1.4.31"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "com.google.api-client",
+          "module": "google-api-client",
+          "version": {
+            "requires": "1.23.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.guava",
+              "module": "guava-jdk5"
+            }
+          ]
+        },
+        {
+          "group": "com.google.oauth-client",
+          "module": "google-oauth-client-jetty",
+          "version": {
+            "requires": "1.23.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.guava",
+              "module": "guava-jdk5"
+            }
+          ]
+        },
+        {
+          "group": "com.google.apis",
+          "module": "google-api-services-drive",
+          "version": {
+            "requires": "v3-rev110-1.23.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.guava",
+              "module": "guava-jdk5"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "flynow-1.0.0.jar",
+          "url": "flynow-1.0.0.jar",
+          "size": 43613,
+          "sha512": "bcbffac4e872a0ba6d65ab408c768b5647c73cf7255343c3bd989ed3110cca0343a12cb6ecc3d9555ae2beb439848d86fde362c7f1410e8581ab89c7303d67c0",
+          "sha256": "20aa22d7406056d77e0719c69b35d08af823b4026e6763bebb3f2e2a95313c34",
+          "sha1": "ac1cb7c9e5e10e8c2a6394de9cfe9c92ff6d3853",
+          "md5": "9222222a810e5e887469a3359a0ba6b1"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flynow-1.0.0-sources.jar",
+          "url": "flynow-1.0.0-sources.jar",
+          "size": 8368,
+          "sha512": "b54ed1b6d522cd4ca1b6c0a35e3f06ddd57df40f0838a6b96859e83f9bc9f8f0a003df7631dff26741ed7a85294923436692fa604aef970a603f9a7559bb348f",
+          "sha256": "307ab2e2b28d42d804fe2298fcb6920c007ca6e50a88eef194c2c7eaa9fb57f3",
+          "sha1": "8eac2e84913a7b6f06b02a612286e49e81abee0a",
+          "md5": "9eb71e5889669fafcc03aa8c472fca6c"
+        }
+      ]
+    }
+  ]
+}
