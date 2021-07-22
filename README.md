@@ -1,5 +1,3 @@
-# Welcome to flyNow 🤫 !
-
 
 <br>
 <br>
