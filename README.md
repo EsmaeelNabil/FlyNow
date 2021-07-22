@@ -61,7 +61,7 @@ flyNow {
 </p>
 
 #### For the first time the commandLine will ask you to open a `URL` to authenticate your `Drive Application api` with your `Google Drive` 
-- So you should open and autharize to continue and `Upload`
+- So you should open and authorize, to continue and `Upload`
 
 <p align="start">
     <img src="https://github.com/EsmaeelNabil/FlyNow/blob/master/art/logs.png">
