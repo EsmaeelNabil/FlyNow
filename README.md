@@ -78,7 +78,7 @@ flyNow {
     <img src="https://github.com/EsmaeelNabil/FlyNow/blob/master/art/logs.png">
 </p>
 
-#### congrats!!
+#### Congrats!!
 
 <p align="start">
     <img src="https://github.com/EsmaeelNabil/FlyNow/blob/master/art/slackmessage.png" height="100">
