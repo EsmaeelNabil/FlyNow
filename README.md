@@ -27,7 +27,7 @@ plugins {
 }
 
 ```
-## OR
+##### `OR`
 #### build.gradle (:app)
 ```
 plugins {  
