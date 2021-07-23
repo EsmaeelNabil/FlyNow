@@ -3,9 +3,10 @@
 <br>
 
 <p align="center">
+❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️  Pending Approval on the gradle plugin portal ❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️
     <img src="./art/banner.png">
+❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️  Pending Approval on the gradle plugin portal ❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️
 </p>
-
 <br>
 <br>
 
