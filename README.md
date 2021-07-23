@@ -5,6 +5,7 @@
 <p align="center">
 ❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️  Pending Approval on the gradle plugin portal ❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️
     <img src="./art/banner.png">
+    <br>
 ❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️  Pending Approval on the gradle plugin portal ❗️❗️❗️❗️❗️❗️❗️❗️❗️❗️
 </p>
 <br>
