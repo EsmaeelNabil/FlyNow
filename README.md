@@ -20,7 +20,7 @@
 -  Or if configured with `useCustomMessage = true` you will need to supply a `-Pmessage` message through the command line `./gradlew flyNow -Pmessage="Your custom Slack message contnet"`
 
 
-## Add the plugin
+## Add the plugin ❗️Pending Approval❗️
 #### build.gradle.kts (:app)
 ```
 plugins {
