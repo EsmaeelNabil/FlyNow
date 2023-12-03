@@ -28,7 +28,7 @@ dependencies {
     implementation("com.google.oauth-client:google-oauth-client-jetty:1.23.0") {
         exclude(group = "com.google.guava", module = "guava-jdk5")
     }
-    implementation("com.google.apis:google-api-services-drive:v3-rev110-1.23.0") {
+    implementation("com.google.apis:google-api-services-drive:v3-rev20231120-2.0.0") {
         exclude(group = "com.google.guava", module = "guava-jdk5")
     }
 
