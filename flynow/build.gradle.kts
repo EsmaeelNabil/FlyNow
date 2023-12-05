@@ -2,7 +2,7 @@ plugins {
     id("com.gradle.plugin-publish") version "0.15.0"
     `java-gradle-plugin`
     `kotlin-dsl`
-    id("org.jetbrains.kotlin.jvm") version "1.4.31"
+    id("org.jetbrains.kotlin.jvm") version "1.9.21"
     `maven-publish`
 }
 
